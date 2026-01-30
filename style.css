@@ -1,62 +1,75 @@
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #7b2ff7, #a855f7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
 }
 
-.container {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 400px;
-    text-align: center;
-}
-
-h2 {
-    margin-bottom: 20px;
-}
-
-#question {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.options {
+/* Background */
+.quiz-bg {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff2f92, #ff5db1);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.optionBtn {
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+/* Question card */
+.quiz-card {
+    background: white;
+    padding: 30px 40px;
+    width: 70%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 10px;
+    transform: skew(-2deg);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.quiz-card h2 {
+    transform: skew(2deg);
+    color: #333;
+}
+
+/* Options */
+.options {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    width: 70%;
+    max-width: 600px;
+}
+
+.option {
+    background: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
     cursor: pointer;
-    background: #eee;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
     transition: 0.3s;
 }
 
-.optionBtn:hover {
-    background: darkred;
+.option:hover {
+    background: #6a0dad;
     color: white;
+    transform: scale(1.05);
 }
 
 #nextBtn {
-    margin-top: 20px;
-    padding: 10px;
-    background: darkred;
+    margin-top: 25px;
+    padding: 12px 20px;
+    background: #6a0dad;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
 }
 
 #score {
     margin-top: 20px;
-    font-size: 18px;
-    color: green;
+    font-size: 20px;
+    color: white;
 }
+
