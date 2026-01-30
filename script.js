@@ -1,13 +1,13 @@
 const questions = [
     {
-        question: "What is the capital of France?",
-        options: ["Paris", "London", "Berlin", "Madrid"],
+        question: "What is the correct syntax to write an HTML comment?",
+        options: ["<!--Comment-->", "//Comment", "#Comment", "/*Comment*/"],
         answer: 0
     },
     {
-        question: "Which language runs in a web browser?",
-        options: ["Java", "C", "Python", "JavaScript"],
-        answer: 3
+        question: "What is the smallest header in HTML by default?",
+        options: ["h1", "h2", "h6", "h4"],
+        answer: 2
     },
     {
         question: "What does CSS stand for?",
@@ -15,14 +15,14 @@ const questions = [
         answer: 1
     },
     {
-        question: "Which company developed the React framework?",
-        options: ["Google", "Facebook", "Microsoft", "Apple"],
-        answer: 1
+        question: "Which HTML attribute is used to define inline styles?",
+        options: ["font", "styles", "script", "style"],
+        answer: 3
     },
     {
-        question: "HTML stands for?",
-        options: ["Hypertext Markup Language", "Hyper Transfer Markup Language", "Hightext Markup Language", "Hyper Text Machine Language"],
-        answer: 0
+        question: "In JavaScript the x===y statement implies that",
+        options: ["Both x and y are equal in value, type and reference address", "Both are x and y are equal in value only", "Both are equal in the value and data type", "Both are not same at all"],
+        answer: 2
     }
 ];
 
