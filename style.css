@@ -70,6 +70,8 @@ body {
 #score {
     margin-top: 20px;
     font-size: 20px;
-    color: white;
+    color: black;
+    font-weight: bold;
 }
+
 

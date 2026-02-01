@@ -25,7 +25,7 @@ const questions = [
         answer: 2
     },
     {
-        question: "In JavaScript, === means?",
+        question: "In JavaScript, x===y means?",
         options: [
             "Same value only",
             "Same type only",
